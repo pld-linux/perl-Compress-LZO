@@ -5,13 +5,13 @@ Summary:	Compress::LZO Perl module - interface to LZO compression library
 Summary(pl):	Modu³ Perla Compress::LZO - interfejs do biblioteki kompresji LZO
 Name:		perl-Compress-LZO
 Version:	1.08
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	lzo-devel >= 1.03
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,8 @@ do kompresji zwyk³ych ³añcuchów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -47,9 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README
-%{perl_sitearch}/Compress/LZO.pm
-%dir %{perl_sitearch}/auto/Compress/LZO
-%{perl_sitearch}/auto/Compress/LZO/autosplit.ix
-%{perl_sitearch}/auto/Compress/LZO/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Compress/LZO/*.so
+%{perl_vendorarch}/Compress/LZO.pm
+%dir %{perl_vendorarch}/auto/Compress/LZO
+%{perl_vendorarch}/auto/Compress/LZO/autosplit.ix
+%{perl_vendorarch}/auto/Compress/LZO/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Compress/LZO/*.so
 %{_mandir}/man3/*
