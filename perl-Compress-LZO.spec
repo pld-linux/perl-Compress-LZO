@@ -6,7 +6,7 @@ Summary(pl):	Modu³ Perla Compress::LZO - interfejs do biblioteki kompresji LZO
 Name:		perl-Compress-LZO
 Version:	1.08
 Release:	2
-License:	GPL
+License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4266ea0cb23817dd02ead4f983c2604f
