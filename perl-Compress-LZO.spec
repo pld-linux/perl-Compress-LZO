@@ -5,13 +5,13 @@ Summary:	Compress::LZO Perl module - interface to LZO compression library
 Summary(pl):	Modu³ Perla Compress::LZO - interfejs do biblioteki kompresji LZO
 Name:		perl-Compress-LZO
 Version:	1.08
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	lzo-devel >= 1.03
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
