@@ -12,10 +12,10 @@ Version:	1.08
 Release:	4
 License:	GPL v2
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4266ea0cb23817dd02ead4f983c2604f
-URL:		http://search.cpan.org/dist/Compress-LZO/
 Patch0:		%{name}-lzo2.patch
+URL:		http://search.cpan.org/dist/Compress-LZO/
 BuildRequires:	lzo-devel >= 2.0
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
