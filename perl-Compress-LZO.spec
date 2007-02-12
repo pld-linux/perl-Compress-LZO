@@ -6,7 +6,7 @@
 %define		pdir	Compress
 %define		pnam	LZO
 Summary:	Compress::LZO Perl module - interface to LZO compression library
-Summary(pl):	Modu³ Perla Compress::LZO - interfejs do biblioteki kompresji LZO
+Summary(pl.UTF-8):   ModuÅ‚ Perla Compress::LZO - interfejs do biblioteki kompresji LZO
 Name:		perl-Compress-LZO
 Version:	1.08
 Release:	4
@@ -28,12 +28,12 @@ Decompression requires no memory. perl-LZO provides LZO bindings for
 Perl - i.e. you can access the LZO library from your Perl scripts
 thereby compressing ordinary Perl strings.
 
-%description -l pl
-LZO jest przeno¶n± bibliotek± do bezstratnej kompresji danych,
-napisan± w ANSI C. Oferuje szybk± kompresjê i bardzo szybk±, nie
-wymagaj±c± pamiêci, dekompresjê. perl-LZO udostêpnia interfejs dla
-Perla - pozwalaj±cy na dostêp do biblioteki LZO ze skryptów perlowych,
-do kompresji zwyk³ych ³añcuchów.
+%description -l pl.UTF-8
+LZO jest przenoÅ›nÄ… bibliotekÄ… do bezstratnej kompresji danych,
+napisanÄ… w ANSI C. Oferuje szybkÄ… kompresjÄ™ i bardzo szybkÄ…, nie
+wymagajÄ…cÄ… pamiÄ™ci, dekompresjÄ™. perl-LZO udostÄ™pnia interfejs dla
+Perla - pozwalajÄ…cy na dostÄ™p do biblioteki LZO ze skryptÃ³w perlowych,
+do kompresji zwykÅ‚ych Å‚aÅ„cuchÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
