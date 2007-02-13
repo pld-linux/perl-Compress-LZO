@@ -6,7 +6,7 @@
 %define		pdir	Compress
 %define		pnam	LZO
 Summary:	Compress::LZO Perl module - interface to LZO compression library
-Summary(pl.UTF-8):   Moduł Perla Compress::LZO - interfejs do biblioteki kompresji LZO
+Summary(pl.UTF-8):	Moduł Perla Compress::LZO - interfejs do biblioteki kompresji LZO
 Name:		perl-Compress-LZO
 Version:	1.08
 Release:	4
