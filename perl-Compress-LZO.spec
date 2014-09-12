@@ -63,6 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Compress/LZO.pm
 %dir %{perl_vendorarch}/auto/Compress/LZO
 %{perl_vendorarch}/auto/Compress/LZO/autosplit.ix
-%{perl_vendorarch}/auto/Compress/LZO/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Compress/LZO/*.so
 %{_mandir}/man3/*
