@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Compress
 %define		pnam	LZO
 Summary:	Compress::LZO Perl module - interface to LZO compression library
