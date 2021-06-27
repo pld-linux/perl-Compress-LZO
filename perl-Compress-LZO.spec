@@ -13,12 +13,13 @@ License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f37acc996444e23ac385ef38190afa74
-URL:		http://search.cpan.org/dist/Compress-LZO/
+URL:		https://metacpan.org/dist/Compress-LZO
 BuildRequires:	lzo-devel >= 2.0
 BuildRequires:	perl-Devel-CheckLib >= 0.9
 %{?with_tests:BuildRequires:	perl-Test-Simple >= 0.94}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
